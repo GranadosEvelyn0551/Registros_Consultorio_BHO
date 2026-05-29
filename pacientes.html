@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Alta de Pacientes - Consultorio BHO</title>
+ <meta charset="utf-8">
+
+<style>
+*{
+ box-sizing:border-box;
+}
+
+body{
+ font-family:Arial, Helvetica, sans-serif;
+ background-color:#eaf4f4;
+ margin:0;
+}
+
+header{
+ background-color:#5dade2;
+ padding:30px;
+ position:relative;
+ text-align:center;
+}
+
+.logo{
+ width:100px;
+ height:100px;
+ position:absolute;
+ left:30px;
+ top:15px;
+}
+
+h1{
+ color:white;
+}
+
+nav{
+ float:left;
+ width:15%;
+ background:#2874a6;
+ padding:20px;
+ min-height:100vh;
+}
+
+nav ul{
+ list-style-type:none;
+ padding:0;
+}
+
+nav ul li{
+ padding:10px;
+}
+
+nav ul li a{
+ color:white;
+ text-decoration:none;
+}
+
+nav ul li a:hover{
+ color:#aed6f1;
+}
+
+article{
+ float:left;
+ width:85%;
+ padding:30px;
+}
+
+.formulario{
+ background-color:white;
+ padding:30px;
+ border-radius:10px;
+ width:75%;
+ box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+label{
+ display:block;
+ margin-top:15px;
+ font-weight:bold;
+ color:#2874a6;
+}
+
+input, textarea, select{
+ width:100%;
+ padding:10px;
+ margin-top:5px;
+ border:1px solid #ccc;
+ border-radius:5px;
+}
+
+textarea{
+ resize:vertical;
+ height:80px;
+}
+
+button{
+ margin-top:20px;
+ background-color:#2874a6;
+ color:white;
+ border:none;
+ padding:12px;
+ width:100%;
+ border-radius:5px;
+ font-size:16px;
+ cursor:pointer;
+}
+
+button:hover{
+ background-color:#1f618d;
+}
+
+footer{
+ background-color:#5dade2;
+ color:white;
+ text-align:center;
+ padding:15px;
+ clear:both;
+ margin-top:20px;
+}
+
+ </style>
+</head>
+
+<body>
+ <header>
+  <img src="BHO.png" class="logo">
+  <h1>Alta de Pacientes</h1>
+ </header>
+
+<section>
+ <nav>
+  <ul>
+   <li><a href="index.html">Inicio</a></li>
+  </ul>
+ </nav>
+
+<article>
+ <div class="formulario">
+  <form action="pacientes.html" method="POST">
+
+  <label>Nombre completo:</label>
+  <input type="text" name="nombre" placeholder="Ej: Elena Rosales Ortiz" required>
+
+  <label>Edad:</label>
+  <input type="number" name="edad" placeholder="Ej: 28" required>
+
+  <label>Correo electronico:</label>
+  <input type="email" name="correo" placeholder="Ej: paciente@email.com" required>
+
+  <label>Telefono:</label>
+  <input type="tel" name="telefono" placeholder="Ej: (656) 123-4567" required>
+
+  <label>Tipo de sangre:</label>
+  <select name="tipo_sangre" required>
+   <option value="">Seleccione</option>
+   <option>O+</option>
+   <option>O-</option>
+   <option>A+</option>
+   <option>A-</option>
+   <option>B+</option>
+   <option>B-</option>
+   <option>AB+</option>
+   <option>AB-</option>
+  </select>
+
+  <label>Alergias:</label>
+  <textarea name="alergias" placeholder="Ej: Penicilina"></textarea>
+
+  <label>Enfermedades cronicas:</label>
+  <textarea name="enfermedades" placeholder="Ej: Diabetes Tipo 2"></textarea>
+
+  <label>Antecedentes medicos:</label>
+  <textarea name="antecedentes" placeholder="Ej: Cirugia de cadera"></textarea>
+
+  <label>Contacto de emergencia:</label>
+  <input type="text" name="contacto_emergencia" placeholder="Ej: Roberto Rosales" required>
+
+  <label>Telefono de emergencia:</label>
+  <input type="tel" name="telefono_emergencia" placeholder="Ej: (656) 987-6543" required>
+
+ <button type="submit"> Guardar Paciente </button>
+
+ </form>
+</div>
+</article>
+</section>
+
+<footer>
+ <p>Evelyn Ivonne Granados Aguirre</p>
+ <p>No. Control: 0551</p>
+ <p>4-I Programacion</p>
+</footer>
+
+</body>
+</html>

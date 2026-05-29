@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Alta de Consultas - Consultorio BHO</title>
+<meta charset="utf-8">
+
+<style>
+
+*{
+ box-sizing:border-box;
+}
+
+body{
+ font-family:Arial, Helvetica, sans-serif;
+ background-color:#eaf4f4;
+ margin:0;
+}
+
+header{
+ background-color:#5dade2;
+ padding:30px;
+ position:relative;
+ text-align:center;
+}
+
+.logo{
+ width:100px;
+ height:100px;
+ position:absolute;
+ left:30px;
+ top:15px;
+}
+
+h1{
+ color:white;
+}
+
+nav{
+ float:left;
+ width:15%;
+ background:#2874a6;
+ padding:20px;
+ min-height:100vh;
+}
+
+nav ul{
+ list-style-type:none;
+ padding:0;
+}
+
+nav ul li{
+ padding:10px;
+}
+
+nav ul li a{
+ color:white;
+ text-decoration:none;
+}
+
+nav ul li a:hover{
+ color:#aed6f1;
+}
+
+article{
+ float:left;
+ width:85%;
+ padding:30px;
+}
+
+.formulario{
+ background-color:white;
+ padding:30px;
+ border-radius:10px;
+ width:70%;
+ box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+label{
+ display:block;
+ margin-top:15px;
+ font-weight:bold;
+ color:#2874a6;
+}
+
+input, textarea{
+ width:100%;
+ padding:10px;
+ margin-top:5px;
+ border:1px solid #ccc;
+ border-radius:5px;
+}
+
+textarea{
+ resize:vertical;
+ height:80px;
+}
+
+button{
+ margin-top:20px;
+ background-color:#2874a6;
+ color:white;
+ border:none;
+ padding:12px;
+ width:100%;
+ border-radius:5px;
+ font-size:16px;
+ cursor:pointer;
+}
+
+button:hover{
+ background-color:#1f618d;
+}
+
+footer{
+ background-color:#5dade2;
+ color:white;
+ text-align:center;
+ padding:15px;
+ clear:both;
+ margin-top:20px;
+}
+
+ </style>
+</head>
+
+<body>
+ <header>
+ <img src="BHO.png" class="logo">
+
+<h1>Alta de Consultas</h1>
+</header>
+
+
+ <section>
+  <nav>
+   <ul>
+    <li><a href="index.html">Inicio</a></li>
+   </ul>
+  </nav>
+
+<article>
+ <div class="formulario">
+  <form action="consultas.html" method="POST">
+   <label>Fecha y hora:</label>
+   <input type="datetime-local" name="fecha_hora" required>
+
+   <label>Nombre del paciente:</label>
+   <input type="text" name="paciente" placeholder="Ej: Javier Corral Rios" required>
+
+   <label>Doctor:</label>
+   <input type="text" name="doctor" placeholder="Ej: Dr. Armando Casas" required>
+
+   <label>Consultorio:</label>
+   <input type="text" name="consultorio" placeholder="Ej: Consultorio 1" required>
+
+   <label>Motivo de consulta:</label>
+   <textarea name="motivo" placeholder="Ej: Dolor de garganta"></textarea>
+
+   <label>Diagnostico:</label>
+   <input type="text" name="diagnostico" placeholder="Ej: Faringitis">
+
+   <label>Signos vitales:</label>
+   <textarea name="signos" placeholder="Ej: TA 120/80, Temp 37C"></textarea>
+
+   <label>Tratamiento:</label>
+   <textarea name="tratamiento" placeholder="Ej: Amoxicilina cada 8 horas"></textarea>
+
+   <label>Recomendaciones:</label>
+   <textarea name="recomendaciones" placeholder="Ej: Reposo y abundantes liquidos">         
+ </textarea>
+
+ <button type="submit"> Guardar Consulta </button>
+
+ </form>
+</div>
+</article>
+</section>
+
+<footer>
+ <p>Evelyn Ivonne Granados Aguirre</p>
+ <p>No. Control: 0551</p>
+ <p>4-I Programacion</p>
+</footer>
+
+</body>
+</html>

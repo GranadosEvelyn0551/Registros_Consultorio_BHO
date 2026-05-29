@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Alta de Doctores - Consultorio BHO</title>
+ <meta charset="utf-8">
+
+<style>
+
+*{
+ box-sizing:border-box;
+}
+
+body{
+ font-family:Arial, Helvetica, sans-serif;
+ background-color:#eaf4f4;
+ margin:0;
+}
+
+header{
+ background-color:#5dade2;
+ padding:30px;
+ position:relative;
+ text-align:center;
+}
+
+.logo{
+ width:100px;
+ height:100px;
+ position:absolute;
+ left:30px;
+ top:15px;
+}
+
+h1{
+ color:white;
+}
+
+nav{
+ float:left;
+ width:15%;
+ background:#2874a6;
+ padding:20px;
+ min-height:100vh;
+}
+
+nav ul{
+ list-style-type:none;
+ padding:0;
+}
+
+nav ul li{
+ padding:10px;
+}
+
+nav ul li a{
+ color:white;
+ text-decoration:none;
+}
+
+nav ul li a:hover{
+ color:#aed6f1;
+}
+
+article{
+ float:left;
+ width:85%;
+ padding:30px;
+}
+
+.formulario{
+ background-color:white;
+ padding:30px;
+ border-radius:10px;
+ width:75%;
+ box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+label{
+ display:block;
+ margin-top:15px;
+ font-weight:bold;
+ color:#2874a6;
+}
+
+input, select{
+ width:100%;
+ padding:10px;
+ margin-top:5px;
+ border:1px solid #ccc;
+ border-radius:5px;
+}
+
+button{
+ margin-top:20px;
+ background-color:#2874a6;
+ color:white;
+ border:none;
+ padding:12px;
+ width:100%;
+ border-radius:5px;
+ font-size:16px;
+ cursor:pointer;
+}
+
+button:hover{
+ background-color:#1f618d;
+}
+
+footer{
+ background-color:#5dade2;
+ color:white;
+ text-align:center;
+ padding:15px;
+ clear:both;
+ margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+ <header>
+  <img src="BHO.png" class="logo">
+  <h1>Alta de Doctores</h1>
+ </header>
+
+<section>
+ <nav>
+  <ul>
+   <li><a href="index.html">Inicio</a></li>
+  </ul>
+ </nav>
+
+<article>
+ <div class="formulario">
+
+  <form action="doctores.html" method="POST">
+
+  <label>Nombre completo:</label>
+  <input type="text" name="nombre" placeholder="Ej: Dr. Armando Casas Rico" required>
+
+  <label>Edad:</label>
+  <input type="number" name="edad" placeholder="Ej: 38" required>
+
+  <label>Sexo:</label>
+  <select name="sexo" required>
+   <option value="">Seleccione</option>
+    <option>Masculino</option>
+    <option>Femenino</option>
+  </select>
+
+  <label>Fecha de nacimiento:</label>
+  <input type="date" name="fecha_nacimiento" required>
+
+  <label>Cedula profesional:</label>
+  <input type="text" name="cedula" placeholder="Ej: 8234567" required>
+
+  <label>Especialidad:</label>
+  <input type="text" name="especialidad" placeholder="Ej: Medicina General" required>
+
+  <label>Sub especialidad:</label>
+  <input type="text" name="sub_especialidad" placeholder="Ej: Nutricion Clinica">
+
+  <label>RFC:</label>
+  <input type="text" name="rfc" placeholder="Ej: CARA850512H89" required>
+
+  <label>Telefono personal:</label>
+  <input type="tel" name="telefono_personal" placeholder="Ej: (656)111-2233" required>
+
+  <label>Telefono consultorio:</label>
+  <input type="tel" name="telefono_consultorio" placeholder="Ej: (656)600-1000" required>
+
+  <label>Correo electronico:</label>
+  <input type="email" name="correo" placeholder="Ej: doctor@consultorio.com" required>
+
+  <label>Horario Lunes a Viernes:</label>
+  <input type="text" name="horario_lv" placeholder="Ej: 08:00 - 14:00">
+
+  <label>Horario Sabado y Domingo:</label>
+  <input type="text" name="horario_sd" placeholder="Ej: Descanso">
+
+ <button type="submit"> Guardar Doctor </button>
+
+ </form>
+</div>
+</article>
+</section>
+
+<footer>
+ <p>Evelyn Ivonne Granados Aguirre</p>
+ <p>No. Control: 0551</p>
+ <p>4-I Programacion</p>
+</footer>
+
+</body>
+</html>

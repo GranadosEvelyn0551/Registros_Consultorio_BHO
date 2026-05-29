@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> - Consultorio BHO</title>
+<meta charset="utf-8">
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+}
+
+header{
+background-color:#5dade2;
+padding:30px;
+text-align:center;
+position:relative;
+}
+
+.logo{
+width:90px;
+height:90px;
+position:absolute;
+left:25px;
+top:15px;
+}
+
+h1{
+color:white;
+transition:color 0.5s ease;
+}
+
+h1:hover{
+color:#d6eaf8;
+}
+
+nav{
+float:left;
+width:15%;
+height:200px;
+background:#2874a6;
+padding:20px;
+min-height:65vh;
+}
+
+nav ul{
+list-style-type:none;
+padding:0;
+}
+
+nav ul li{
+padding:10px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+nav ul li a:hover{
+color:#aed6f1;
+}
+
+article{
+float:left;
+padding:30px;
+width:30%;
+background-color:#f8f9f9;
+height:300px;
+}
+
+.sucursales{
+float:left;
+margin-left:40px;
+margin-top:20px;
+font-size:18px;
+color:#2874a6;
+width:250px;
+}
+
+.imagen{
+float:right;
+width:300px;
+margin-top:30px;
+margin-right:20px;
+border-radius:15px;
+}
+
+section::after{
+content:"";
+display:table;
+clear:both;
+}
+
+footer{
+background-color:#5dade2;
+padding:10px;
+text-align:center;
+color:white;
+}
+
+@media (max-width:600px){
+
+nav, article{
+width:100%;
+height:auto;
+}
+
+.imagen{
+width:90%;
+margin-right:15px;
+margin-top:20px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+ <header>
+
+<img src="BHO.png" class="logo">
+
+ <h1>Consultorio BHO</h1>
+</header>
+
+<section>
+<nav>
+ <ul>
+  <li><a href="pacientes.html">Pacientes</a></li>
+  <li><a href="doctores.html">Doctores</a></li>
+  <li><a href="consultas.html">Consultas</a></li>
+ </ul>
+</nav>
+
+<article>
+ <h2>BienvenidOoos</h2>
+ <p>Atencion¡!.</p>
+ <p>Pobre alma en desgracia, ¿tienes problemas hasta de tu propia espalda?.</p>
+ <p>No te preocupes! pues aqui en el consultorio BHO nosotros nos encargaremos de que salgas en una pieza..literalmente.</p>
+</article>
+
+<div class="sucursales">
+
+ <h3>Sucursales BHO</h3>
+
+ <p>- Plaza Juarez Mall</p>
+ <p>- Las Torres</p>
+ <p>- Centro Medico Norte</p>
+</div>
+
+ <img src="Sami.png" class="imagen">
+</section>
+
+<footer>
+ <p>Nombre: Evelyn Ivonne Granados Aguirre</p>
+ <p>No. Control: 0551</p>
+ <p>Semestre y Grupo: 4-I</p>
+ <p>Especialidad: Programacion</p>
+</footer>
+
+</body>
+</html>
